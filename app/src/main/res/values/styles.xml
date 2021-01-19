@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TitleItemTextAppearance">
+        <item name="android:textSize">@dimen/main_text</item>
+        <item name="android:textColor">@color/main_text</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?attr/textAppearanceHeadline6</item>
+    </style>
+    <style name="CordinatesItemTextAppearance">
+        <item name="android:textSize">@dimen/sub_text</item>
+        <item name="android:textColor">@color/sub_text</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?attr/textAppearanceHeadline6</item>
+    </style>
+
+    <style name="ToolbarItemTextAppearance">
+        <item name="android:textSize">@dimen/main_text</item>
+        <item name="android:textColor">@color/main_text</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?attr/textAppearanceHeadline6</item>
+    </style>
+
+    <style name="SearchInputAppearance" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundMode">outline</item>
+        <item name="endIconMode">clear_text</item>
+        <item name="hintEnabled">false</item>
+        <item name="shapeAppearanceOverlay">@style/Search.Rounded.Corners</item>
+    </style>
+
+    <style name="Search.Rounded.Corners" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">30dp</item>
+    </style>
+
+</resources>

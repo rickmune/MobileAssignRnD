@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MobileAssignRnD</string>
+    <string name="cities">Cities</string>
+    <string name="search">Search</string>
 </resources>
