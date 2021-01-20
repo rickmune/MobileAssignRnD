@@ -8,6 +8,11 @@ import com.squareup.moshi.Types
 import kotlinx.coroutines.flow.flow
 
 
+/**
+ * Use of binary search to find the object that has a name that starts with the typed search term
+ * Then use linear search to find matching objects to the left and right of the found object
+ * Then merge the objects to the left with the found and those to the right
+ */
 suspend fun searchBinaryPlus(cities: List<City>, param: String) = flow {
     var low = 0
     var high = cities.size - 1
