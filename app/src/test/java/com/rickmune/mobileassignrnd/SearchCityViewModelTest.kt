@@ -3,7 +3,6 @@ package com.rickmune.mobileassignrnd
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.Observer
 import com.rickmune.mobileassignrnd.domain.SearchCityUseCases
-import com.rickmune.mobileassignrnd.viewmodel.CityFoundState
 import com.rickmune.mobileassignrnd.viewmodel.LoadingState
 import com.rickmune.mobileassignrnd.viewmodel.SearchCityState
 import com.rickmune.mobileassignrnd.viewmodel.SearchCityViewModel

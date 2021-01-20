@@ -1,8 +1,8 @@
 package com.rickmune.mobileassignrnd.domain
 
 import android.content.Context
-import com.rickmune.mobileassignrnd.loadCities
-import com.rickmune.mobileassignrnd.searchBinaryPlus
+import com.rickmune.mobileassignrnd.utils.loadCities
+import com.rickmune.mobileassignrnd.utils.searchBinaryPlus
 import kotlinx.coroutines.flow.Flow
 
 class SearchCityInteractor(private val cxt: Context): SearchCityUseCases {

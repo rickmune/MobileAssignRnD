@@ -1,4 +1,4 @@
-package com.rickmune.mobileassignrnd
+package com.rickmune.mobileassignrnd.utils
 
 import android.content.Context
 import com.rickmune.mobileassignrnd.domain.City
