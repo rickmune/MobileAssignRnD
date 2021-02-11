@@ -63,14 +63,17 @@ suspend fun searchBinaryPlus(cities: List<City>, param: String) = flow {
 }
 
 suspend fun loadCities(cxt: Context, fileName: String) = flow {
-    val inStream = cxt.assets.open(fileName)
-    val buffer = ByteArray(inStream.available())
-    inStream.read(buffer)
-    inStream.close()
-    val json = String(buffer, Charsets.UTF_8)
-    val moshi = Moshi.Builder().build()
-    val listType = Types.newParameterizedType(List::class.java, City::class.java)
-    val jsonAdapter: JsonAdapter<List<City>> = moshi.adapter(listType)
-    val cities = jsonAdapter.fromJson(json);
-    emit(cities)
+    runCatching{
+        val inStream = cxt.assets.open(fileName)
+        val buffer = ByteArray(inStream.available())
+        inStream.read(buffer)
+        inStream.close()
+        val json = String(buffer, Charsets.UTF_8)
+        val moshi = Moshi.Builder().build()
+        val listType = Types.newParameterizedType(List::class.java, City::class.java)
+        val jsonAdapter: JsonAdapter<List<City>> = moshi.adapter(listType)
+        val cities = jsonAdapter.fromJson(json);
+        emit(cities)
+    }
+
 }
